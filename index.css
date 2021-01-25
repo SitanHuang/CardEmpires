@@ -1,0 +1,110 @@
+body {
+    color: rgba(0, 0, 0, 0.78);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: monospace;
+    transition: all 300ms ease;
+    user-select: none;
+}
+
+body > div {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+}
+
+.popup {
+    z-index: 50;
+}
+
+.popup.aboveAll {
+    z-index: 55;
+}
+
+.card-container {
+    width: calc(100% + 40px);
+    height: 350px;
+    overflow: auto;
+    white-space: nowrap;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.05);
+    margin: 0 -20px;
+}
+
+.card-container.small {
+    width: calc(100% + 80px);
+    overflow: auto;
+    zoom: 50%;
+    margin: 0 -40px;
+}
+
+.card {
+    display: inline-block;
+    width: 250px;
+    height: 300px;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+    cursor: pointer;
+    position: relative;
+    color: white;
+}
+
+.card h4 {
+    position: absolute;
+    font-size: 3.2em;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.card h3 {
+    position: absolute;
+    top: 10em;
+    left: 0;
+    right: 0;
+    white-space: normal;
+    word-wrap: normal;
+    word-break: keep-all;
+}
+
+.card h5 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    white-space: normal;
+    word-wrap: normal;
+    word-break: keep-all;
+}
+
+.card span {
+    width: 1.5em;
+    height: 2em;
+    text-transform: uppercase;
+    color: white;
+    float: left;
+    border-radius: 3px;
+    border: 1px solid white;
+    line-height: 2em;
+}
+
+button {
+    text-transform: uppercase;;
+    background: rgba(0, 0, 0, 0.78);
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border: 0;
+    cursor: pointer;
+}
